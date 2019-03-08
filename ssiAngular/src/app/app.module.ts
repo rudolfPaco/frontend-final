@@ -35,10 +35,12 @@ import {MatSlideToggleModule} from '@angular/material/typings/esm5/slide-toggle'
 import {MatProgressSpinnerModule} from '@angular/material/typings/esm5/progress-spinner';
 import {MatProgressBarModule} from '@angular/material/typings/esm5/progress-bar';
 import {MatPaginatorModule} from '@angular/material/typings/esm5/paginator';
+import {CatalogComponent} from './catalog/catalog.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CatalogComponent
   ],
   imports: [
     BrowserModule,

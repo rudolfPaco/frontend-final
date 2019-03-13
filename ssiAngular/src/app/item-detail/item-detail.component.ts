@@ -1,4 +1,5 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Item} from '../shared/item';
 
 const ITEM = {
   name: 'Helmet',
@@ -48,8 +49,9 @@ const ITEM = {
 })
 export class ItemDetailComponent implements OnInit {
 
-  item = ITEM;
-  itemDetail = ITEM.comments;
+  @Input()
+  item: Item;
+
 
   constructor() {
   }

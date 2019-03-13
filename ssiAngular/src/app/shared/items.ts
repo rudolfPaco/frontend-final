@@ -2,6 +2,8 @@ import {Item} from './item';
 
 export const ITEMS: Item[] = [
   {
+    id: 0,
+    featured: true,
     name: 'Helmet',
     image: '/assets/images/helmet.jpg',
     category: 'safety',
@@ -42,6 +44,8 @@ export const ITEMS: Item[] = [
     ]
   },
   {
+    id: 1,
+    featured: false,
     name: 'Audio protector',
     image: '/assets/images/audio.jpg',
     category: 'safety',
@@ -82,6 +86,8 @@ export const ITEMS: Item[] = [
     ]
   },
   {
+    id: 2,
+    featured: false,
     name: 'Glasses',
     image: '/assets/images/glasses.jpg',
     category: 'safety',
@@ -122,6 +128,8 @@ export const ITEMS: Item[] = [
     ]
   },
   {
+    id: 3,
+    featured: false,
     name: 'Gloves',
     image: '/assets/images/gloves.jpg',
     category: 'safety',

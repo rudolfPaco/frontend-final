@@ -2,22 +2,6 @@
 
 // some basic resets
 
-body {
-  padding: 0;
-  margin: 0;
-  font-family: Roboto, sans-serif;
-}
-
-.container {
-  margin: 20px;
-  display: flex;
-}
-
-.mat-card-image {
-  width: 400px;
-  margin: 0 -24px 16px -24px;
-}
-
 $lt-gray: #ddd;
 $background-dark: #512DA8;
 $background-light: #9575CD;
@@ -36,14 +20,28 @@ $divider-color: #BDBDBD;
   padding: $pad-up-down $pad-left-right;
 }
 
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+
+.container {
+  margin: 20px;
+  display: flex;
+}
+
+.mat-card-image {
+  width: 400px;
+  margin: 0 -24px 16px -24px;
+}
+
 .background-primary {
   background-color: $background-dark !important;
 }
-
 .background-accent {
   background-color: $accent-color !important;
 }
-
 .text-floral-white {
   color: floralwhite !important;
 }

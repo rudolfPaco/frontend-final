@@ -5,32 +5,33 @@
      fxLayoutAlign.gt-md="space-around center"
      fxLayoutGap="10px"
      fxLayoutGap.xs="0">
-  <div fxFlex="40" *ngIf="item">
+  <div fxFlex="40" *ngIf="equipo">
     <mat-card>
       <mat-card-title-group>
         <mat-card-title>
-          <h3>{{item.name | uppercase}}</h3>
+          <h3>{{equipo.nombre | uppercase}}</h3>
         </mat-card-title>
       </mat-card-title-group>
-      <img matCardImage src={{item.image}} alt={{item.name}}>
+      <img matCardImage data-src="data:image/png;base64,{{equipo.image}}" alt={{equipo.nombre}}>
       <mat-card-content>
-        <p>{{item.description}}
+        <p>{{equipo.categoria}}
         </p>
       </mat-card-content>
       <mat-card-actions align="start">
-        <button mat-button (click)="onAction($event)">LIKE</button>
-        <button mat-button (click)="onAction($event)">SHARE</button>
+        <button mat-raised-button>modificar</button>
+        <button mat-raised-button>eliminar</button>
       </mat-card-actions>
     </mat-card>
 
   </div>
-  <div fxFlex="40">
-    <h1>Comments</h1>
+  <div fxFlex="40" *ngIf="equipo">
+    <h1>Detalle del Equipo</h1>
     <mat-list>
-      <mat-list-item *ngFor="let detail of itemDetail">
-        <p matLine>{{detail.comment}}</p>
-        <p matLine>{{detail.rating}} Stars</p>
-        <p matLine>-- {{detail.author}} {{detail.date | date}}</p>
+      <mat-list-item>
+        <p matLine>nombre: {{equipo.nombre}}</p>
+        <p matLine>cantidad: {{equipo.cantidad}} Unidades</p>
+        <p matLine>estado: {{equipo.estado}}</p>
+        <p matLine>categoria: {{equipo.categoria}} fecha de adquisicion: {{equipo.fechaAdquisicion | date}}</p>
       </mat-list-item>
     </mat-list>
   </div>
